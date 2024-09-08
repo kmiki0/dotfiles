@@ -1,17 +1,17 @@
 local api = vim.api
 
-vim.cmd('augroup MyAutoCmd')
-vim.cmd('autocmd!')
-vim.cmd('augroup END')
+-- vim.cmd('augroup MyAutoCmd')
+-- vim.cmd('autocmd!')
+-- vim.cmd('augroup END')
 
-vim.cmd('filetype off')
-vim.cmd('syntax off')
+-- vim.cmd('filetype off')
+-- vim.cmd('syntax off')
 -- vim.api.nvim_exec('language en_US', true)
 
 
-vim.g.mapleader = " "
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+-- vim.g.mapleader = " "
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
 
 local vars = {
   python_host_prog = '/usr/bin/python2',
@@ -30,46 +30,46 @@ local vars = {
   loaded_man = 1,
 }
 
-for var, val in pairs(vars) do
-  api.nvim_set_var(var, val)
-end
+-- for var, val in pairs(vars) do
+  -- api.nvim_set_var(var, val)
+-- end
 
-vim.cmd('filetype plugin indent on')
-vim.cmd('syntax on')
+-- vim.cmd('filetype plugin indent on')
+-- vim.cmd('syntax on')
 
-vim.cmd('command! ToggleNum set rnu!')
+-- vim.cmd('command! ToggleNum set rnu!')
 
-vim.cmd([[
-if executable('fctix')
-  autocmd InsertLeave * :call system('fctix-remote -c')
-  autocmd CmdluneLeave * :call system('fctix-remote -c')
-]]
-)
+-- vim.cmd([[
+-- if executable('fctix')
+  -- autocmd InsertLeave * :call system('fctix-remote -c')
+  -- autocmd CmdluneLeave * :call system('fctix-remote -c')
+-- ]]
+-- )
 
-vim.env.MYVIMDEIN = '~/.vim/dein.toml'
+-- vim.env.MYVIMDEIN = '~/.vim/dein.toml'
 
-api.nvim_create_user_command('Memo', function(opts)
-  vim.cmd("e ".."~/dev/memo/"..os.date("%Y%m%d").."memo.md")
-end,
-{}
-)
-api.nvim_create_user_command('Todo', function(opts)
-  vim.cmd("e ".."~/dev/Todo.md")
-end,
-{}
-)
-api.nvim_create_user_command('Cd', function(opts)
-  vim.cmd("cd%:p:h")
-end,
-{}
-)
-api.nvim_create_user_command('CdVimSetting', function(opts)
-  vim.cmd("cd ~/.vim")
-end,
-{}
-)
-api.nvim_create_user_command('CdDevTmp', function(opts)
-  vim.cmd("cd ~/dev/tmp/")
-end,
-{}
-)
+-- api.nvim_create_user_command('Memo', function(opts)
+  -- vim.cmd("e ".."~/dev/memo/"..os.date("%Y%m%d").."memo.md")
+-- end,
+-- {}
+-- )
+-- api.nvim_create_user_command('Todo', function(opts)
+  -- vim.cmd("e ".."~/dev/Todo.md")
+-- end,
+-- {}
+-- )
+-- api.nvim_create_user_command('Cd', function(opts)
+  -- vim.cmd("cd%:p:h")
+-- end,
+-- {}
+-- )
+-- api.nvim_create_user_command('CdVimSetting', function(opts)
+  -- vim.cmd("cd ~/.vim")
+-- end,
+-- {}
+-- )
+-- api.nvim_create_user_command('CdDevTmp', function(opts)
+  -- vim.cmd("cd ~/dev/tmp/")
+-- end,
+-- {}
+-- )
