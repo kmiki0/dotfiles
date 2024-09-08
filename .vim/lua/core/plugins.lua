@@ -10,16 +10,15 @@ if not vim.loop.fs_stat(lazypath) then
     lazypath,
   })
 end
+
 vim.opt.rtp:prepend(lazypath)
 
-vim.g["denops#deno"] = vim.fn.getenv('DENO_PATH')
+-- vim.g["denops#deno"] = vim.fn.getenv('DENO_PATH')
 
-plugins = require('plugins.lazy_plugins')
-
+plugins = require('plugins.plugins_list')
 require('lazy').setup(plugins)
 
 -- setup screenshot
-local api = vim.api
-
-require('screenshot').setup()
-api.nvim_set_keymap('i', '<c-s>', "<esc>:lua require('screenshot').take_and_insert()<CR>", { noremap = true })
+-- local api = vim.api
+-- require('screenshot').setup()
+-- api.nvim_set_keymap('i', '<c-s>', "<esc>:lua require('screenshot').take_and_insert()<CR>", { noremap = true })
