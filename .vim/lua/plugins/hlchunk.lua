@@ -1,6 +1,6 @@
 require('hlchunk').setup({
     chunk = {
-        enable = true
+        enable = true,
         priority = 15,
         use_treesitter = true, -- コードブロックをハイライトするか
         chars = { -- チャンクのデザイン
@@ -18,8 +18,7 @@ require('hlchunk').setup({
         },
         -- animation related
         duration = 200,
-        delay = 300,
+        delay = 100,
             -- ...
-        },
     },
 })
