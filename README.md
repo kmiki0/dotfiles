@@ -1,5 +1,10 @@
 # dotfiles
 
+## インストール
+```sh
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/kmiki0/dotfiles/master/install.sh)"
+```
+
 
 #### フォルダ階層　説明
 ```javascript
