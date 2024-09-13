@@ -38,4 +38,10 @@ return {
         -- add any options here
     }
   },
+  {
+    'goolord/alpha-nvim',
+    config = function()
+      require('plugins.alpha-nvim')
+    end
+  }
 }
