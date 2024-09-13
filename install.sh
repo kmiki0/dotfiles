@@ -26,7 +26,7 @@ else
     curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
     chmod u+x nvim.appimage
     ./nvim.appimage --appimage-extract
-    mv /squashfs-root /usr/bin/squashfs-root
+    mv ${TEMP_DIR}/squashfs-root /usr/bin/squashfs-root
     ln -s /usr/bin/squashfs-root/AppRun /usr/bin/nvim
 fi
 
