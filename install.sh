@@ -38,6 +38,7 @@ fi
 
 
 # symbolic links
+mkdir $HOME/.config
 ln -sf $HOME/dotfiles/.vim $HOME/.config/nvim
 
 
