@@ -57,39 +57,22 @@ end
 
 SetOptions()
 
+-- :homeコマンドを定義
+vim.api.nvim_create_user_command('Home', function()
+  require'alpha'.start()
+end, {})
+
+
 -- yankで、クリップボード連携
 vim.cmd('set clipboard&')
 vim.opt.clipboard = 'unnamedplus'
-
-
-
+-- yankしたTextをprint表示
 vim.api.nvim_create_autocmd('TextYankPost', {
     callback = function()
-        -- ヤンクしたテキストを取得
         local yanked_text = vim.fn.getreg('"')
-        
-        -- テキストを表示
         print("Yanked text: " .. yanked_text)
     end,
 })
-
-
-vim.opt.clipboard = "unnamed"
-
-vim.g.clipboard = {
-    name = 'myClipboard',
-    copy = {
-        ['+'] = 'win32yank.exe -i',
-        ['*'] = 'win32yank.exe -i',
-    },
-    paste = {
-        ['+'] = 'win32yank.exe -o',
-        ['*'] = 'win32yank.exe -o',
-    },
-    cache_enabled = 1,
-}
-
-
 
 vim.cmd('autocmd FileType * lua SetOptions()')
 vim.opt.runtimepath:append('~/.vim')
