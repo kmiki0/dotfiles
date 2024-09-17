@@ -9,9 +9,9 @@ local api = vim.api
 -- vim.api.nvim_exec('language en_US', true)
 
 
--- vim.g.mapleader = " "
--- vim.g.loaded_netrw = 1
--- vim.g.loaded_netrwPlugin = 1
+vim.g.mapleader = " "
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 local vars = {
   python_host_prog = '/usr/bin/python2',

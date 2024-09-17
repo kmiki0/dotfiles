@@ -8,6 +8,9 @@
 - neo-tree [*GitHub*](https://github.com/nvim-neo-tree/neo-tree.nvim)
   - vscodoのエクスプローラーのようなもの
 
+### □ FileSearch
+- telescope.nvim [*GitHub*](https://github.com/nvim-telescope/telescope.nvim)
+  - 検索したいワードが含まれるファイルが検索できる
 
 ### □ Code Editing
 - hlchunk [*github*](https://github.com/shellraining/hlchunk.nvim)

@@ -3,14 +3,18 @@ local dashboard = require('alpha.themes.dashboard')
 
 -- Header (起動画面の上部に表示されるアスキーアートやテキスト)
 dashboard.section.header.val = {
-	[[                                                ,,                     ]],
-	[[`7MN.   `7MF'                   `7MMF'   `7MF'  db"                    ]],
-	[[  MMN.    M                       `MA     ,V                           ]],
-	[[  M YMb   M   .gP"Ya   ,pW"Wq.     VM:   ,V   `7MM  `7MMpMMMb.pMMMb.   ]],
-	[[  M  `MN. M  ,M'   Yb 6W'   `Wb     MM.  M'     MM    MM    MM    MM   ]], 
-	[[  M   `MM.M  8M"""""" 8M     M8     `MM A'      MM    MM    MM    MM   ]], 
-	[[  M     YMM  YM.    , YA.   ,A9      :MM;       MM    MM    MM    MM   ]],
-	[[.JML.    YM   `Mbmmd'  `Ybmd9'        VF      .JMML..JMML  JMML  JMML. ]],
+--    [[                                                ,,                     ]],
+--    [[`7MN.   `7MF'                   `7MMF'   `7MF'  db"                    ]],
+--    [[  MMN.    M                       `MA     ,V                           ]],
+--    [[  M YMb   M   .gP"Ya   ,pW"Wq.     VM:   ,V   `7MM  `7MMpMMMb.pMMMb.   ]],
+--    [[  M  `MN. M  ,M'   Yb 6W'   `Wb     MM.  M'     MM    MM    MM    MM   ]], 
+--    [[  M   `MM.M  8M"""""" 8M     M8     `MM A'      MM    MM    MM    MM   ]],
+--    [[  M     YMM  YM.    , YA.   ,A9      :MM;       MM    MM    MM    MM   ]],
+--    [[.JML.    YM   `Mbmmd'  `Ybmd9'        VF      .JMML..JMML  JMML  JMML. ]],
+    [[ ______  ______   __   ______  ______ ]],
+    [[|__    ||    __| |__| |__    ||      |]],
+    [[|    __||  __  |  __  |__    ||  --  |]],
+    [[|______||______| |__| |______||______|]],
 }
 
 -- ボタンやショートカットの設定
