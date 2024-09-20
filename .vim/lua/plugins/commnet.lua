@@ -7,16 +7,16 @@ require('Comment').setup({
         ---NORMAL モードのトグル マッピング
         toggler = {
             -- 行コメント切り替え
-            line = 'gcc',
+            line = '<c-/>',
             -- ブロックコメント切り替え
-            block = 'gbc',
+            block = '<c-/>/',
         },
         ---NORMAL および VISUAL モードのオペレータ保留マッピング
         opleader = {
             -- 行コメント
-            line = 'gc',
+            line = '<c-/>',
             -- ブロックコメント
-            block = 'gb',
+            block = '<c-/>/',
         },
     },
 })
